@@ -1,0 +1,39 @@
+GenAlign: A Gene Alignment Program
+
+
+This program can be used to align two strings, for example two genes.  It finds
+the less expensive way to align them according to cost tables representinf the
+cost for each operation (insertion, deletion, substitution), for each character
+of the strings.
+
+The program can load FASTA and GenBank flat files for loading a gene from an
+existing file.  It can also generate a random gene and generate the second one
+by applying random alterations on the first one.
+
+This application has been developed using JBuilder.  Sources are standard Java
+buy the frame is designed with more ease using JBuilder.  Note: JBuilder version
+2005 was used.
+
+
+Organization of the classes:
+    * Aligner.java: the alignment algorithm lies here.
+    * Application.java: main application class which opens the main frame.
+    * Costs.java: used to centralize cost information from editable tables.
+    * CostTable1D.java: a generator for an editable 1D cost table.
+    * CostTable2D.java: a generator for an editable 2D cost table.
+    * ExtFileFilter.java: a file filter for opening FASTA/GenBank gene files.
+    * MainFrame.java: the main window (frame).
+    * MainFrame.jbx: jBuilder file for the main frame.
+
+
+To build the application:
+    make
+
+To launch it:
+    make run
+
+
+Have fun! :]
+
+--
+Benjamin Gaillard
